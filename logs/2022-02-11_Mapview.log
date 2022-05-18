@@ -1,0 +1,54 @@
+2022-02-11 11:26:02,173 | INFO     | 0041 | Execution is about to start...
+2022-02-11 11:26:02,173 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 52, 'tileY': 25, 'zoomLevel': 6, 'maxZoom': 18, 'startTime': 1616630400000, 'endTime': 1616803200000, 'country': 'Australia', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'dl_data_volume', 'aggregation': 'avg', 'operator': 'Telstra', 'carriers': None, 'elementType': 'Cell', 'elementNames': None, 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-11 11:26:02,173 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-11 11:26:07,646 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 200 None
+2022-02-11 11:26:07,646 | INFO     | 0019 | response: {"report":"kpiStatistics","type":"table","title":"Kpi Statistics","tabs":[{"name":"dl_data_volume_avg","unit":null,"meta":{"columns":{"kpiStatisticsColumn":{"label":"Kpi Statistics","type":"string"},"kpiValueColumn":{"label":"Kpi Value","type":"string"}},"colors":null},"data":[{"kpiStatisticsColumn":"p10","kpiValueColumn":0.039},{"kpiStatisticsColumn":"p50","kpiValueColumn":0.583},{"kpiStatisticsColumn":"p90","kpiValueColumn":27.436},{"kpiStatisticsColumn":"KPI","kpiValueColumn":12.033},{"kpiStatisticsColumn":"Avg User Count","kpiValueColumn":5.0},{"kpiStatisticsColumn":"Sample Count","kpiValueColumn":813}]}]}
+2022-02-11 11:26:07,646 | INFO     | 0021 | status_code: 200
+2022-02-11 11:26:07,646 | INFO     | 0025 | All Validations : Passed
+2022-02-11 11:26:07,646 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 196, 'tileY': 135, 'zoomLevel': 8, 'maxZoom': 18, 'startTime': 1619222400000, 'endTime': 1619827200000, 'country': 'Thailand', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'number_of_users', 'aggregation': 'avg', 'operator': 'AIS', 'carriers': None, 'elementType': 'Cell', 'elementNames': ['520-3-550505-101', '520-3-550505-202', '520-3-550505-103', '520-3-550505-201', '520-3-550505-203', '520-3-550505-102'], 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-11 11:26:07,661 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-11 11:26:09,705 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 200 None
+2022-02-11 11:26:09,705 | INFO     | 0019 | response: {"report":"kpiStatistics","type":"table","title":"Kpi Statistics","tabs":[{"name":"number_of_users_avg","unit":null,"meta":{"columns":{"kpiStatisticsColumn":{"label":"Kpi Statistics","type":"string"},"kpiValueColumn":{"label":"Kpi Value","type":"string"}},"colors":null},"data":[{"kpiStatisticsColumn":"p10","kpiValueColumn":0.0},{"kpiStatisticsColumn":"p50","kpiValueColumn":0.0},{"kpiStatisticsColumn":"p90","kpiValueColumn":2.0},{"kpiStatisticsColumn":"KPI","kpiValueColumn":2.0},{"kpiStatisticsColumn":"Avg User Count","kpiValueColumn":2.0},{"kpiStatisticsColumn":"Sample Count","kpiValueColumn":9}]}]}
+2022-02-11 11:26:09,705 | INFO     | 0021 | status_code: 200
+2022-02-11 11:26:09,705 | INFO     | 0025 | All Validations : Passed
+2022-02-11 11:26:09,720 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 52, 'tileY': 25, 'zoomLevel': 6, 'maxZoom': 18, 'startTime': 1627776000000, 'endTime': 1628985600000, 'country': 'Australia', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'rsrp', 'aggregation': 'avg', 'operator': 'Telstra', 'carriers': None, 'elementType': 'Cell', 'elementNames': None, 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'RF MAPS'}}
+2022-02-11 11:26:09,720 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-11 11:26:32,608 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 200 None
+2022-02-11 11:26:32,623 | INFO     | 0019 | response: {"report":"kpiStatistics","type":"table","title":"Kpi Statistics","tabs":[{"name":"rsrp_avg","unit":null,"meta":{"columns":{"kpiStatisticsColumn":{"label":"Kpi Statistics","type":"string"},"kpiValueColumn":{"label":"Kpi Value","type":"string"}},"colors":null},"data":[{"kpiStatisticsColumn":"p10","kpiValueColumn":-116.0},{"kpiStatisticsColumn":"p50","kpiValueColumn":-104.0},{"kpiStatisticsColumn":"p90","kpiValueColumn":-87.0},{"kpiStatisticsColumn":"KPI","kpiValueColumn":-102.87},{"kpiStatisticsColumn":"Avg User Count","kpiValueColumn":1834.0},{"kpiStatisticsColumn":"Sample Count","kpiValueColumn":27960082}]}]}
+2022-02-11 11:26:32,623 | INFO     | 0021 | status_code: 200
+2022-02-11 11:26:32,623 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 22, in test_mapview_widget_kpiStatistics
+    if assert_mapview_kpistatistics_widget(json_response, expectedDict):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 29, in assert_mapview_kpistatistics_widget
+    assert_that(actual_SampleCount).described_as('SampleCount validation').is_equal_to(expected_SampleCount)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [P50 validation] Expected <-104.0> to be equal to <0>, but was not.
+2. [AvgUserCount validation] Expected <1834.0> to be equal to <0>, but was not.
+2022-02-11 11:26:32,821 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 196, 'tileY': 135, 'zoomLevel': 8, 'maxZoom': 18, 'startTime': 1619222400000, 'endTime': 1619827200000, 'country': 'Thailand', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'number_of_users', 'aggregation': 'avg', 'operator': 'AIS', 'carriers': None, 'elementType': 'Cell', 'elementNames': ['520-3-550505-101', '520-3-550505-202', '520-3-550505-103', '520-3-550505-201', '520-3-550505-203', '520-3-550505-102'], 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-11 11:26:32,821 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-11 11:26:34,428 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 200 None
+2022-02-11 11:26:34,428 | INFO     | 0019 | response: {"report":"kpiStatistics","type":"table","title":"Kpi Statistics","tabs":[{"name":"number_of_users_avg","unit":null,"meta":{"columns":{"kpiStatisticsColumn":{"label":"Kpi Statistics","type":"string"},"kpiValueColumn":{"label":"Kpi Value","type":"string"}},"colors":null},"data":[{"kpiStatisticsColumn":"p10","kpiValueColumn":0.0},{"kpiStatisticsColumn":"p50","kpiValueColumn":0.0},{"kpiStatisticsColumn":"p90","kpiValueColumn":2.0},{"kpiStatisticsColumn":"KPI","kpiValueColumn":2.0},{"kpiStatisticsColumn":"Avg User Count","kpiValueColumn":2.0},{"kpiStatisticsColumn":"Sample Count","kpiValueColumn":9}]}]}
+2022-02-11 11:26:34,428 | INFO     | 0021 | status_code: 200
+2022-02-11 11:26:34,428 | INFO     | 0025 | All Validations : Passed
+2022-02-11 11:26:34,428 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 52, 'tileY': 25, 'zoomLevel': 6, 'maxZoom': 18, 'startTime': 1616630400000, 'endTime': 1616803200000, 'country': 'Australia', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'dl_data_volume', 'aggregation': 'avg', 'operator': 'Telstra', 'carriers': None, 'elementType': 'Cell', 'elementNames': None, 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-11 11:26:34,443 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-11 11:26:35,680 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 200 None
+2022-02-11 11:26:35,686 | INFO     | 0019 | response: {"report":"kpiStatistics","type":"table","title":"Kpi Statistics","tabs":[{"name":"dl_data_volume_avg","unit":null,"meta":{"columns":{"kpiStatisticsColumn":{"label":"Kpi Statistics","type":"string"},"kpiValueColumn":{"label":"Kpi Value","type":"string"}},"colors":null},"data":[{"kpiStatisticsColumn":"p10","kpiValueColumn":0.039},{"kpiStatisticsColumn":"p50","kpiValueColumn":0.583},{"kpiStatisticsColumn":"p90","kpiValueColumn":27.436},{"kpiStatisticsColumn":"KPI","kpiValueColumn":12.033},{"kpiStatisticsColumn":"Avg User Count","kpiValueColumn":5.0},{"kpiStatisticsColumn":"Sample Count","kpiValueColumn":813}]}]}
+2022-02-11 11:26:35,686 | INFO     | 0021 | status_code: 200
+2022-02-11 11:26:35,686 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 22, in test_mapview_widget_kpiStatistics
+    if assert_mapview_kpistatistics_widget(json_response, expectedDict):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 29, in assert_mapview_kpistatistics_widget
+    assert_that(actual_SampleCount).described_as('SampleCount validation').is_equal_to(expected_SampleCount)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [P10 validation] Expected <0.039> to be equal to <0>, but was not.

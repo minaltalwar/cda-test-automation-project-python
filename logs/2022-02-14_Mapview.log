@@ -1,0 +1,165 @@
+2022-02-14 10:55:45,651 | INFO     | 0041 | Execution is about to start...
+2022-02-14 10:55:45,654 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 52, 'tileY': 25, 'zoomLevel': 6, 'maxZoom': 18, 'startTime': 1616630400000, 'endTime': 1616803200000, 'country': 'Australia', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'dl_data_volume', 'aggregation': 'avg', 'operator': 'Telstra', 'carriers': None, 'elementType': 'Cell', 'elementNames': None, 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-14 10:55:45,664 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 10:56:52,029 | INFO     | 0041 | Execution is about to start...
+2022-02-14 10:56:52,029 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 52, 'tileY': 25, 'zoomLevel': 6, 'maxZoom': 18, 'startTime': 1616630400000, 'endTime': 1616803200000, 'country': 'Australia', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'dl_data_volume', 'aggregation': 'avg', 'operator': 'Telstra', 'carriers': None, 'elementType': 'Cell', 'elementNames': None, 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-14 10:56:52,029 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 10:57:29,076 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 500 None
+2022-02-14 10:57:29,091 | INFO     | 0019 | response: {"message":"Server Error","details":["Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 36002ms."]}
+2022-02-14 10:57:29,091 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 20, in test_mapview_widget_kpiStatistics
+    validate_status_code_200(resp.status_code)
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 34, in validate_status_code_200
+    assert_that(status_code).described_as('status_code').is_equal_to(200)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [status_code] Expected <500> to be equal to <200>, but was not.
+2022-02-14 10:57:29,376 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 196, 'tileY': 135, 'zoomLevel': 8, 'maxZoom': 18, 'startTime': 1619222400000, 'endTime': 1619827200000, 'country': 'Thailand', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'number_of_users', 'aggregation': 'avg', 'operator': 'AIS', 'carriers': None, 'elementType': 'Cell', 'elementNames': ['520-3-550505-101', '520-3-550505-202', '520-3-550505-103', '520-3-550505-201', '520-3-550505-203', '520-3-550505-102'], 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-14 10:57:29,376 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 10:58:06,451 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 500 None
+2022-02-14 10:58:06,467 | INFO     | 0019 | response: {"message":"Server Error","details":["Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 36000ms."]}
+2022-02-14 10:58:06,467 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 20, in test_mapview_widget_kpiStatistics
+    validate_status_code_200(resp.status_code)
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 34, in validate_status_code_200
+    assert_that(status_code).described_as('status_code').is_equal_to(200)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [status_code] Expected <500> to be equal to <200>, but was not.
+2022-02-14 10:58:06,467 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 52, 'tileY': 25, 'zoomLevel': 6, 'maxZoom': 18, 'startTime': 1627776000000, 'endTime': 1628985600000, 'country': 'Australia', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'rsrp', 'aggregation': 'avg', 'operator': 'Telstra', 'carriers': None, 'elementType': 'Cell', 'elementNames': None, 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'RF MAPS'}}
+2022-02-14 10:58:06,483 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 10:58:43,706 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 500 None
+2022-02-14 10:58:43,706 | INFO     | 0019 | response: {"message":"Server Error","details":["Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 36002ms."]}
+2022-02-14 10:58:43,706 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 20, in test_mapview_widget_kpiStatistics
+    validate_status_code_200(resp.status_code)
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 34, in validate_status_code_200
+    assert_that(status_code).described_as('status_code').is_equal_to(200)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [status_code] Expected <500> to be equal to <200>, but was not.
+2022-02-14 10:58:43,721 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 196, 'tileY': 135, 'zoomLevel': 8, 'maxZoom': 18, 'startTime': 1619222400000, 'endTime': 1619827200000, 'country': 'Thailand', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'number_of_users', 'aggregation': 'avg', 'operator': 'AIS', 'carriers': None, 'elementType': 'Cell', 'elementNames': ['520-3-550505-101', '520-3-550505-202', '520-3-550505-103', '520-3-550505-201', '520-3-550505-203', '520-3-550505-102'], 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-14 10:58:43,721 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 10:59:20,823 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 500 None
+2022-02-14 10:59:20,825 | INFO     | 0019 | response: {"message":"Server Error","details":["Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 36000ms."]}
+2022-02-14 10:59:20,827 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 20, in test_mapview_widget_kpiStatistics
+    validate_status_code_200(resp.status_code)
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 34, in validate_status_code_200
+    assert_that(status_code).described_as('status_code').is_equal_to(200)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [status_code] Expected <500> to be equal to <200>, but was not.
+2022-02-14 10:59:20,829 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 52, 'tileY': 25, 'zoomLevel': 6, 'maxZoom': 18, 'startTime': 1616630400000, 'endTime': 1616803200000, 'country': 'Australia', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'dl_data_volume', 'aggregation': 'avg', 'operator': 'Telstra', 'carriers': None, 'elementType': 'Cell', 'elementNames': None, 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-14 10:59:20,829 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 10:59:57,899 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 500 None
+2022-02-14 10:59:57,902 | INFO     | 0019 | response: {"message":"Server Error","details":["Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 36001ms."]}
+2022-02-14 10:59:57,904 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 20, in test_mapview_widget_kpiStatistics
+    validate_status_code_200(resp.status_code)
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 34, in validate_status_code_200
+    assert_that(status_code).described_as('status_code').is_equal_to(200)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [status_code] Expected <500> to be equal to <200>, but was not.
+2022-02-14 11:27:30,032 | INFO     | 0041 | Execution is about to start...
+2022-02-14 11:27:30,034 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 52, 'tileY': 25, 'zoomLevel': 6, 'maxZoom': 18, 'startTime': 1616630400000, 'endTime': 1616803200000, 'country': 'Australia', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'dl_data_volume', 'aggregation': 'avg', 'operator': 'Telstra', 'carriers': None, 'elementType': 'Cell', 'elementNames': None, 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-14 11:27:30,040 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 11:28:07,427 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 500 None
+2022-02-14 11:28:07,429 | INFO     | 0019 | response: {"message":"Server Error","details":["Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 36000ms."]}
+2022-02-14 11:28:07,430 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 20, in test_mapview_widget_kpiStatistics
+    validate_status_code_200(resp.status_code)
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 34, in validate_status_code_200
+    assert_that(status_code).described_as('status_code').is_equal_to(200)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [status_code] Expected <500> to be equal to <200>, but was not.
+2022-02-14 11:28:07,645 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 196, 'tileY': 135, 'zoomLevel': 8, 'maxZoom': 18, 'startTime': 1619222400000, 'endTime': 1619827200000, 'country': 'Thailand', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'number_of_users', 'aggregation': 'avg', 'operator': 'AIS', 'carriers': None, 'elementType': 'Cell', 'elementNames': ['520-3-550505-101', '520-3-550505-202', '520-3-550505-103', '520-3-550505-201', '520-3-550505-203', '520-3-550505-102'], 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-14 11:28:07,650 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 11:28:44,697 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 500 None
+2022-02-14 11:28:44,700 | INFO     | 0019 | response: {"message":"Server Error","details":["Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 36000ms."]}
+2022-02-14 11:28:44,702 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 20, in test_mapview_widget_kpiStatistics
+    validate_status_code_200(resp.status_code)
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 34, in validate_status_code_200
+    assert_that(status_code).described_as('status_code').is_equal_to(200)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [status_code] Expected <500> to be equal to <200>, but was not.
+2022-02-14 11:28:44,712 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 52, 'tileY': 25, 'zoomLevel': 6, 'maxZoom': 18, 'startTime': 1627776000000, 'endTime': 1628985600000, 'country': 'Australia', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'rsrp', 'aggregation': 'avg', 'operator': 'Telstra', 'carriers': None, 'elementType': 'Cell', 'elementNames': None, 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'RF MAPS'}}
+2022-02-14 11:28:44,716 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 11:29:21,756 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 500 None
+2022-02-14 11:29:21,759 | INFO     | 0019 | response: {"message":"Server Error","details":["Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 36000ms."]}
+2022-02-14 11:29:21,760 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 20, in test_mapview_widget_kpiStatistics
+    validate_status_code_200(resp.status_code)
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 34, in validate_status_code_200
+    assert_that(status_code).described_as('status_code').is_equal_to(200)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [status_code] Expected <500> to be equal to <200>, but was not.
+2022-02-14 11:29:21,770 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 196, 'tileY': 135, 'zoomLevel': 8, 'maxZoom': 18, 'startTime': 1619222400000, 'endTime': 1619827200000, 'country': 'Thailand', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'number_of_users', 'aggregation': 'avg', 'operator': 'AIS', 'carriers': None, 'elementType': 'Cell', 'elementNames': ['520-3-550505-101', '520-3-550505-202', '520-3-550505-103', '520-3-550505-201', '520-3-550505-203', '520-3-550505-102'], 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-14 11:29:21,775 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 11:30:00,316 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 500 None
+2022-02-14 11:30:00,320 | INFO     | 0019 | response: {"message":"Server Error","details":["Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 36000ms."]}
+2022-02-14 11:30:00,321 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 20, in test_mapview_widget_kpiStatistics
+    validate_status_code_200(resp.status_code)
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 34, in validate_status_code_200
+    assert_that(status_code).described_as('status_code').is_equal_to(200)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [status_code] Expected <500> to be equal to <200>, but was not.
+2022-02-14 11:30:00,338 | INFO     | 0016 | input_json: {'pixelSize': 4, 'tileX': 52, 'tileY': 25, 'zoomLevel': 6, 'maxZoom': 18, 'startTime': 1616630400000, 'endTime': 1616803200000, 'country': 'Australia', 'technology': '4G', 'widget': 'kpiStatistics', 'parameters': {'kpi': 'dl_data_volume', 'aggregation': 'avg', 'operator': 'Telstra', 'carriers': None, 'elementType': 'Cell', 'elementNames': None, 'sampleType': None, 'topologyImportFlag': 'false', 'rasterFamily': 'TRAFFIC MAPS'}}
+2022-02-14 11:30:00,345 | DEBUG    | 0971 | Starting new HTTPS connection (1): 10.64.114.153:443
+2022-02-14 11:30:37,468 | DEBUG    | 0452 | https://10.64.114.153:443 "POST /cda-raster-service/cellRasterWidgets/data/widget HTTP/1.1" 500 None
+2022-02-14 11:30:37,470 | INFO     | 0019 | response: {"message":"Server Error","details":["Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 36002ms."]}
+2022-02-14 11:30:37,471 | ERROR    | 0027 | Error Occurred..
+Traceback (most recent call last):
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\test_mapview.py", line 20, in test_mapview_widget_kpiStatistics
+    validate_status_code_200(resp.status_code)
+  File "C:\Users\etlwmnl\PycharmProjects\cda-test-automation-project\testcases\assertions\assertion.py", line 34, in validate_status_code_200
+    assert_that(status_code).described_as('status_code').is_equal_to(200)
+  File "C:\Python38-32\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\etlwmnl\pycharmprojects\cda-test-automation-project\venv\lib\site-packages\assertpy\assertpy.py", line 120, in soft_assertions
+    raise AssertionError(out)
+AssertionError: soft assertion failures:
+1. [status_code] Expected <500> to be equal to <200>, but was not.
